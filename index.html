@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>William Gallagher | Wedding Officiant in Avon, Ohio</title>
+  <meta name="description" content="Book William Gallagher — an ordained minister in Avon, Ohio. Simple, stress-free weddings with a ceremony that fits you. Negotiable fee. Quick response." />
+  <meta name="theme-color" content="#0B1F3B" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#0B1F3B;
+      --gold:#C8A24A;
+      --ivory:#FBF7F0;
+      --slate:#334155;
+      --sage:#9AAE9A;
+      --rose:#B85C5C;
+
+      --card:#ffffff;
+      --muted:#64748b;
+      --ring: rgba(200,162,74,.35);
+
+      --shadow: 0 18px 45px rgba(2,6,23,.12);
+      --radius: 22px;
+      --max: 1120px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, var(--ivory) 40%, #ffffff 100%);
+      color: #0f172a;
+      line-height: 1.5;
+    }
+    a{color:inherit}
+    img{max-width:100%;display:block}
+
+    /* Layout */
+    .wrap{max-width:var(--max); margin:0 auto; padding: 0 18px;}
+    .section{padding: 72px 0;}
+    .grid{display:grid; gap:18px;}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      border:1px solid transparent;
+      text-decoration:none;
+      cursor:pointer;
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease, border-color .12s ease;
+      white-space: nowrap;
+    }
+    .btn:active{transform: translateY(1px)}
+    .btn-primary{
+      background: var(--gold);
+      color: #1b1405;
+      box-shadow: 0 12px 28px rgba(200,162,74,.30);
+    }
+    .btn-primary:hover{box-shadow: 0 16px 38px rgba(200,162,74,.38)}
+    .btn-ghost{
+      background: rgba(255,255,255,.75);
+      border-color: rgba(11,31,59,.15);
+      color: var(--navy);
+      backdrop-filter: blur(10px);
+    }
+    .btn-ghost:hover{border-color: rgba(11,31,59,.28)}
+    .pill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.72);
+      border: 1px solid rgba(11,31,59,.14);
+      color: var(--slate);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .icon{
+      width: 18px; height:18px; display:inline-block;
+    }
+
+    /* Header */
+    .topbar{
+      position:sticky; top:0; z-index: 50;
+      background: rgba(255,255,255,.75);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(2,6,23,.08);
+    }
+    .topbar-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 12px 0;
+      gap: 12px;
+    }
+    .brand{
+      display:flex; align-items:flex-start; gap:12px;
+    }
+    .mark{
+      width:40px;height:40px;border-radius:12px;
+      background: radial-gradient(circle at 30% 30%, #fff 0%, rgba(255,255,255,.45) 35%, rgba(255,255,255,0) 60%),
+                  linear-gradient(135deg, var(--navy) 0%, #123a73 55%, var(--gold) 180%);
+      box-shadow: 0 10px 22px rgba(11,31,59,.20);
+      border: 1px solid rgba(255,255,255,.35);
+    }
+    .brand h1{
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      line-height: 1.15;
+      margin:0;
+      color: var(--navy);
+    }
+    .brand small{
+      display:block;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 2px;
+      font-size: 12px;
+    }
+    .top-actions{display:flex; gap:10px; align-items:center}
+
+    /* Hero */
+    .hero{
+      padding: 34px 0 10px;
+    }
+    .hero-card{
+      position:relative;
+      border-radius: calc(var(--radius) + 10px);
+      overflow:hidden;
+      background:
+        linear-gradient(90deg, rgba(11,31,59,.92) 0%, rgba(11,31,59,.72) 42%, rgba(11,31,59,.35) 70%, rgba(11,31,59,.10) 100%),
+        url('assets/hero.png');
+      background-size: cover;
+      background-position: center;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.35);
+    }
+    .hero-inner{
+      padding: 42px 18px;
+    }
+    @media(min-width: 900px){
+      .hero-inner{padding: 64px 54px;}
+    }
+    .hero h2{
+      font-family: "Playfair Display", serif;
+      color: #fff;
+      font-size: 40px;
+      line-height: 1.05;
+      margin: 0 0 12px 0;
+      letter-spacing: .2px;
+    }
+    .hero p{
+      color: rgba(255,255,255,.88);
+      font-size: 16px;
+      margin: 0 0 18px 0;
+      max-width: 52ch;
+    }
+    .hero .hero-cta{display:flex; flex-wrap:wrap; gap:10px; margin-top: 12px;}
+    .hero-meta{display:flex; flex-wrap:wrap; gap:10px; margin-top: 18px;}
+
+    /* Cards & typography */
+    .kicker{
+      font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+      font-size: 12px; color: rgba(11,31,59,.75);
+    }
+    .h3{
+      font-family:"Playfair Display", serif;
+      font-size: 30px;
+      margin: 8px 0 10px;
+      color: var(--navy);
+      line-height: 1.15;
+    }
+    .sub{
+      margin:0;
+      color: var(--slate);
+      max-width: 70ch;
+    }
+    .card{
+      background: rgba(255,255,255,.86);
+      border: 1px solid rgba(2,6,23,.08);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 40px rgba(2,6,23,.08);
+      overflow:hidden;
+    }
+    .card-pad{padding: 18px;}
+    @media(min-width: 900px){ .card-pad{padding: 22px;} }
+
+    /* Two-col sections */
+    .two{
+      display:grid;
+      gap: 18px;
+    }
+    @media(min-width: 900px){
+      .two{grid-template-columns: 1.1fr .9fr; gap: 22px;}
+    }
+    .about-img{
+      min-height: 320px;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(180deg, rgba(11,31,59,.18), rgba(11,31,59,.42)),
+        url('assets/about.png');
+      background-size: cover;
+      background-position: center;
+      border: 1px solid rgba(2,6,23,.08);
+      box-shadow: 0 16px 40px rgba(2,6,23,.10);
+    }
+
+    /* Services */
+    .service-grid{
+      display:grid; gap: 14px;
+    }
+    @media(min-width: 900px){
+      .service-grid{grid-template-columns: repeat(3, 1fr);}
+    }
+    .service{
+      padding: 18px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid rgba(2,6,23,.08);
+      box-shadow: 0 10px 26px rgba(2,6,23,.06);
+      height:100%;
+    }
+    .service h4{margin: 10px 0 6px; font-size: 16px; color: var(--navy);}
+    .service p{margin:0; color: var(--slate); font-size: 14px;}
+    .badge{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(200,162,74,.18);
+      border: 1px solid rgba(200,162,74,.40);
+      color: #3a2a06;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .03em;
+    }
+
+    /* Pricing strip */
+    .pricing{
+      background: linear-gradient(135deg, rgba(11,31,59,.92) 0%, rgba(11,31,59,.82) 55%, rgba(200,162,74,.28) 140%),
+                  url('assets/services.png');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      border-radius: calc(var(--radius) + 10px);
+      border: 1px solid rgba(255,255,255,.25);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .pricing-inner{padding: 22px;}
+    @media(min-width:900px){.pricing-inner{padding: 34px;}}
+    .pricing h3{
+      font-family:"Playfair Display", serif;
+      margin:0 0 8px;
+      font-size: 30px;
+      line-height:1.1;
+    }
+    .pricing p{margin:0 0 14px; color: rgba(255,255,255,.88); max-width: 72ch;}
+    .pricing-row{
+      display:grid; gap: 12px;
+      margin-top: 14px;
+    }
+    @media(min-width:900px){.pricing-row{grid-template-columns: 1.3fr .7fr; align-items:start;}}
+    .pricing-box{
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 18px;
+      padding: 16px;
+    }
+    .pricing-box strong{display:block; font-size: 14px; letter-spacing:.08em; text-transform:uppercase; opacity:.9;}
+    .price{
+      font-family:"Playfair Display", serif;
+      font-size: 34px;
+      margin: 6px 0 8px;
+    }
+    .small{font-size: 13px; color: rgba(255,255,255,.86); margin:0}
+    .list{
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: rgba(255,255,255,.88);
+      font-size: 14px;
+    }
+    .list li{margin: 6px 0}
+
+    /* Reviews */
+    .reviews{
+      border-radius: calc(var(--radius) + 10px);
+      overflow:hidden;
+      border: 1px solid rgba(2,6,23,.08);
+      box-shadow: 0 18px 45px rgba(2,6,23,.08);
+      background:
+        linear-gradient(90deg, rgba(251,247,240,.96) 0%, rgba(251,247,240,.82) 52%, rgba(251,247,240,.62) 100%),
+        url('assets/reviews-bg.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .reviews-inner{padding: 22px;}
+    @media(min-width:900px){.reviews-inner{padding: 34px;}}
+    .quotes{
+      display:grid; gap: 14px; margin-top: 14px;
+    }
+    @media(min-width:900px){.quotes{grid-template-columns: repeat(3, 1fr);}}
+    .quote{
+      background: rgba(255,255,255,.80);
+      border: 1px solid rgba(2,6,23,.08);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 10px 26px rgba(2,6,23,.06);
+      height:100%;
+    }
+    .quote p{margin:0; color: var(--slate); font-size: 14px;}
+    .quote b{display:block; margin-top: 10px; color: var(--navy); font-size: 13px;}
+
+    /* FAQ */
+    details{
+      background:#fff;
+      border:1px solid rgba(2,6,23,.08);
+      border-radius: 16px;
+      padding: 14px 14px;
+      box-shadow: 0 10px 22px rgba(2,6,23,.05);
+    }
+    details summary{
+      cursor:pointer;
+      font-weight:800;
+      color: var(--navy);
+    }
+    details p{margin: 10px 0 0; color: var(--slate); font-size: 14px;}
+
+    /* Contact */
+    form{display:grid; gap: 12px;}
+    label{font-weight:700; color: var(--navy); font-size: 13px;}
+    input, textarea, select{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(2,6,23,.14);
+      background: rgba(255,255,255,.92);
+      outline:none;
+      font-size: 15px;
+    }
+    input:focus, textarea:focus, select:focus{
+      box-shadow: 0 0 0 5px var(--ring);
+      border-color: rgba(200,162,74,.65);
+    }
+    textarea{min-height: 120px; resize: vertical;}
+    .fine{
+      color: var(--muted);
+      font-size: 12px;
+      margin: 10px 0 0;
+    }
+
+    /* Sticky mobile CTA bar */
+    .sticky-cta{
+      position: fixed;
+      left: 12px; right: 12px; bottom: 12px;
+      z-index: 60;
+      display:flex;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.78);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(2,6,23,.10);
+      box-shadow: 0 18px 45px rgba(2,6,23,.14);
+    }
+    .sticky-cta .btn{flex:1}
+    @media(min-width: 900px){
+      .sticky-cta{display:none;}
+    }
+
+    /* Footer */
+    footer{
+      padding: 30px 0 96px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer-grid{
+      display:grid; gap: 10px;
+    }
+    @media(min-width:900px){.footer-grid{grid-template-columns: 1fr 1fr; align-items:center;}}
+    .right{justify-self:start}
+    @media(min-width:900px){.right{justify-self:end}}
+  </style>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar-inner">
+        <div class="brand" aria-label="Site brand">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <h1>William Gallagher</h1>
+            <small>Wedding Officiant • Avon, Ohio</small>
+          </div>
+        </div>
+        <div class="top-actions">
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          <a class="btn btn-primary" href="https://YOUR-BOOKING-LINK-HERE.com" target="_blank" rel="noopener">Book My Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="wrap hero">
+    <div class="hero-card">
+      <div class="hero-inner">
+        <div class="pill" title="Service area">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 21s7-4.7 7-11a7 7 0 1 0-14 0c0 6.3 7 11 7 11Z" stroke="white" stroke-opacity=".9" stroke-width="2"/>
+            <path d="M12 10.5a2.5 2.5 0 1 0 0-.01Z" stroke="white" stroke-opacity=".9" stroke-width="2"/>
+          </svg>
+          Serving Avon, Ohio & nearby areas
+        </div>
+
+        <h2>A ceremony that feels like <em>you</em> — simple, meaningful, stress-free.</h2>
+        <p>
+          The formality of getting married shouldn’t be challenging. Whether you’re planning something traditional or
+          wonderfully unexpected, I’ll help you keep it personal, clear, and calm—so you can enjoy the moment.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://YOUR-BOOKING-LINK-HERE.com" target="_blank" rel="noopener">Check Availability</a>
+          <a class="btn btn-ghost" href="#contact">Get a Fast Quote</a>
+        </div>
+
+        <div class="hero-meta">
+          <span class="pill"><span class="badge">Fee: Negotiable</span></span>
+          <span class="pill">Payments: Cash (per listing)</span>
+          <span class="pill">Religious Affiliation: Catholic (per listing)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About + Quick Value -->
+  <section class="section">
+    <div class="wrap">
+      <div class="two">
+        <div>
+          <div class="kicker">About</div>
+          <div class="h3">Warm guidance for your “I do”</div>
+          <p class="sub">
+            You deserve a ceremony that’s easy to plan and true to your story. I’m an ordained minister based in Avon, Ohio,
+            and my approach is straightforward: make the process simple, keep the ceremony meaningful, and center your preferences.
+          </p>
+
+          <div class="grid" style="margin-top:14px;">
+            <div class="card"><div class="card-pad">
+              <b style="color:var(--navy)">Make it yours</b>
+              <p style="margin:6px 0 0; color:var(--slate); font-size:14px;">
+                Backyard, venue, or somewhere unique—you set the tone. I’ll help you shape a ceremony that fits.
+              </p>
+            </div></div>
+
+            <div class="card"><div class="card-pad">
+              <b style="color:var(--navy)">Clear, calm planning</b>
+              <p style="margin:6px 0 0; color:var(--slate); font-size:14px;">
+                A simple process, helpful guidance, and quick communication so nothing feels confusing.
+              </p>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="about-img" role="img" aria-label="Officiant portrait image"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="kicker">Services</div>
+      <div class="h3">Wedding officiant services</div>
+      <p class="sub">Based on the listing, William provides marriage services. Here’s how couples typically book:</p>
+
+      <div class="service-grid" style="margin-top:16px;">
+        <div class="service">
+          <span class="badge">Most Popular</span>
+          <h4>Wedding Ceremony Officiating</h4>
+          <p>Personal ceremony flow, professional delivery, and help keeping the moment smooth and meaningful.</p>
+        </div>
+        <div class="service">
+          <span class="badge">Simple</span>
+          <h4>Elopements & Small Weddings</h4>
+          <p>Short, heartfelt ceremonies for intimate groups—focused on what matters most.</p>
+        </div>
+        <div class="service">
+          <span class="badge">Personal</span>
+          <h4>Custom Touches</h4>
+          <p>Want something creative (backyard, travel-themed, etc.)? We’ll shape it around your vision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="pricing">
+        <div class="pricing-inner">
+          <div class="kicker" style="color: rgba(255,255,255,.78)">Pricing</div>
+          <h3>Negotiable fee — fair, clear, and based on your plan</h3>
+          <p>
+            The listing notes the service fee is <b>negotiable</b>. Use the form below to share your date, location, and ceremony style,
+            and you’ll get a fast reply with next steps.
+          </p>
+
+          <div class="pricing-row">
+            <div class="pricing-box">
+              <strong>What impacts the quote</strong>
+              <ul class="list">
+                <li>Date/time + schedule needs</li>
+                <li>Location + travel details</li>
+                <li>Ceremony length and customization</li>
+                <li>Rehearsal request (optional)</li>
+              </ul>
+            </div>
+
+            <div class="pricing-box">
+              <strong>Payments</strong>
+              <div class="price">Cash</div>
+              <p class="small">Payment method shown on the public listing.</p>
+              <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                <a class="btn btn-primary" href="#contact">Request Quote</a>
+                <a class="btn btn-ghost" href="https://YOUR-BOOKING-LINK-HERE.com" target="_blank" rel="noopener">Book</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews (placeholders) -->
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="reviews">
+        <div class="reviews-inner">
+          <div class="kicker">Reviews</div>
+          <div class="h3">What couples want to feel on wedding day</div>
+          <p class="sub">
+            The listing page doesn’t show public reviews, so these are placeholders to demonstrate layout.
+            Replace them with real testimonials anytime.
+          </p>
+
+          <div class="quotes">
+            <div class="quote">
+              <p>“We wanted something personal and relaxed. The ceremony felt like us—and the whole process was easy.”</p>
+              <b>— Placeholder Couple</b>
+            </div>
+            <div class="quote">
+              <p>“Calm, clear communication. We knew exactly what to expect and felt supported the entire time.”</p>
+              <b>— Placeholder Couple</b>
+            </div>
+            <div class="quote">
+              <p>“Professional delivery, meaningful words, and a smooth flow. We couldn’t have asked for more.”</p>
+              <b>— Placeholder Couple</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="kicker">FAQ</div>
+      <div class="h3">Quick answers</div>
+      <div class="grid" style="margin-top:14px;">
+        <details>
+          <summary>How far in advance should we book?</summary>
+          <p>As soon as you have a date and location. Popular weekends fill first—booking early helps secure your preferred time.</p>
+        </details>
+        <details>
+          <summary>Can we do something non-traditional?</summary>
+          <p>Yes. The approach is “it’s all about you.” Share your idea in the form and we’ll shape the ceremony around it.</p>
+        </details>
+        <details>
+          <summary>Do you offer rehearsals?</summary>
+          <p>If you’d like a rehearsal, request it in your message. Availability and pricing can be included in your quote.</p>
+        </details>
+        <details>
+          <summary>What do you need from us to get a quote?</summary>
+          <p>Your date/time, ceremony location, approximate guest count, and any special requests. That’s enough to start.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="two">
+        <div class="card">
+          <div class="card-pad">
+            <div class="kicker">Contact</div>
+            <div class="h3">Check availability / request a quote</div>
+            <p class="sub">Send the essentials and you’ll get a fast response. (Email destination is a placeholder.)</p>
+
+            <form id="contactForm">
+              <div>
+                <label for="name">Your Name</label>
+                <input id="name" name="name" autocomplete="name" required placeholder="Jane & Chris" />
+              </div>
+
+              <div class="grid" style="grid-template-columns: 1fr; gap:12px;">
+                <div>
+                  <label for="email">Your Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+                </div>
+                <div>
+                  <label for="date">Wedding Date</label>
+                  <input id="date" name="date" type="date" required />
+                </div>
+              </div>
+
+              <div>
+                <label for="location">Ceremony Location (City/venue)</label>
+                <input id="location" name="location" required placeholder="Avon, OH (or venue name)" />
+              </div>
+
+              <div>
+                <label for="style">Ceremony Style</label>
+                <select id="style" name="style" required>
+                  <option value="" disabled selected>Select one…</option>
+                  <option>Traditional</option>
+                  <option>Simple & Short</option>
+                  <option>Personal / Story-focused</option>
+                  <option>Creative / Non-traditional</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message">Anything you want included?</label>
+                <textarea id="message" name="message" placeholder="Rehearsal? Special readings? A unique setting? Share what matters to you."></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send Message</button>
+
+              <p class="fine">
+                Note: Update this destination email before publishing:
+                <b>YOUR_EMAIL_HERE@example.com</b>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-pad">
+            <div class="kicker">Booking</div>
+            <div class="h3">Prefer to book right now?</div>
+            <p class="sub">
+              Add your booking link (Calendly, HoneyBook, Square Appointments, etc.) and couples can reserve time in seconds.
+            </p>
+
+            <div style="margin-top:14px; display:grid; gap:12px;">
+              <a class="btn btn-primary" href="https://YOUR-BOOKING-LINK-HERE.com" target="_blank" rel="noopener">Book My Services</a>
+              <a class="btn btn-ghost" href="#contact">Ask a Question</a>
+
+              <div class="card" style="background: rgba(200,162,74,.10); border-color: rgba(200,162,74,.28);">
+                <div class="card-pad">
+                  <b style="color: var(--navy)">Quick booking checklist</b>
+                  <ul style="margin:10px 0 0; padding-left:18px; color: var(--slate); font-size:14px;">
+                    <li>Date + time</li>
+                    <li>Location + address/venue</li>
+                    <li>Guest count estimate</li>
+                    <li>Any “must include” moments</li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="fine">Replace <b>https://YOUR-BOOKING-LINK-HERE.com</b> with the real booking URL.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>
+        <b style="color:var(--navy)">William Gallagher</b> • Wedding Officiant • Avon, Ohio
+        <div style="margin-top:6px;">© <span id="yr"></span> • Built for direct inquiries + bookings</div>
+      </div>
+      <div class="right">
+        <a href="#contact" style="text-decoration:none; font-weight:800; color:var(--navy)">Contact Me</a>
+        <span style="opacity:.5"> • </span>
+        <a href="https://YOUR-BOOKING-LINK-HERE.com" target="_blank" rel="noopener" style="text-decoration:none; font-weight:800; color:var(--navy)">Book My Services</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" role="navigation" aria-label="Quick actions">
+    <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    <a class="btn btn-primary" href="https://YOUR-BOOKING-LINK-HERE.com" target="_blank" rel="noopener">Book</a>
+  </div>
+
+  <script>
+    // Footer year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Simple mailto handler (placeholder email)
+    const DEST_EMAIL = "YOUR_EMAIL_HERE@example.com";
+
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const date = document.getElementById('date').value;
+      const location = document.getElementById('location').value.trim();
+      const style = document.getElementById('style').value;
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent(`Wedding Inquiry — ${name} — ${date}`);
+      const body = encodeURIComponent(
+`Hi William,
+
+We'd like to check availability and get a quote.
+
+Name: ${name}
+Email: ${email}
+Date: ${date}
+Location: ${location}
+Ceremony Style: ${style}
+
+Details:
+${message || "(none provided)"}
+
+Thank you!`
+      );
+
+      window.location.href = `mailto:${DEST_EMAIL}?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
